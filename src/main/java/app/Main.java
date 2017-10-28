@@ -36,7 +36,7 @@ public class Main extends Application {
 
         DB db = new MongoClient().getDB("recipeapp");
         Jongo jongo = new Jongo(db);
-        MongoCollection recipes = jongo.getCollection("recipes3");
+        MongoCollection recipes = jongo.getCollection("recipes");
         recipesDatabase = new RecipesDatabase(recipes);
 
         try {
