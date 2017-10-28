@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditRecipeController">
+    <children>
+        <Label fx:id="name" layoutX="54.0" layoutY="40.0" text="Nazwa" />
+        <Label fx:id="portion" layoutX="47.0" layoutY="81.0" text="Liczba porcji" />
+        <Label fx:id="cost" layoutX="47.0" layoutY="113.0" prefHeight="17.0" prefWidth="54.0" text="Koszt" />
+        <Label fx:id="time" layoutX="47.0" layoutY="154.0" text="Czas" />
+        <Label fx:id="difficulty" layoutX="47.0" layoutY="192.0" text="Trudność" />
+        <Label fx:id="category" layoutX="47.0" layoutY="230.0" text="Kategoria" />
+        <TextField fx:id="nameText" layoutX="172.0" layoutY="35.0" />
+        <TextField fx:id="portionText" layoutX="172.0" layoutY="77.0" />
+        <TextField fx:id="timeText" layoutX="172.0" layoutY="150.0" />
+        <TextField fx:id="categoryText" layoutX="172.0" layoutY="226.0" />
+        <Button fx:id="editRecipe" layoutX="474.0" layoutY="345.0" mnemonicParsing="false" text="Edytuj przepis" />
+        <ComboBox fx:id="costBox" layoutX="172.0" layoutY="109.0" prefWidth="150.0" />
+        <ComboBox fx:id="difficultyBox" layoutX="172.0" layoutY="188.0" prefWidth="150.0" />
+        <Label fx:id="ingredients" layoutX="430.0" layoutY="18.0" text="Składniki" />
+        <Label fx:id="directions" layoutX="409.0" layoutY="184.0" text="Sposób przygotowania" />
+        <TextField fx:id="ingredientName" layoutX="374.0" layoutY="104.0" prefHeight="35.0" prefWidth="175.0" />
+        <TextField fx:id="ingredientQuantity" layoutX="374.0" layoutY="48.0" prefHeight="35.0" prefWidth="175.0" />
+        <Button fx:id="addIngredient" layoutX="343.0" layoutY="150.0" text="Dodaj składnik" />
+        <Button fx:id="removeIngredients" layoutX="447.0" layoutY="150.0" text="Usuń wszystkie składniki" />
+        <TextField fx:id="directionText" layoutX="370.0" layoutY="224.0" prefHeight="35.0" prefWidth="192.0" />
+        <Button fx:id="addDirection" layoutX="368.0" layoutY="271.0" text="Dodaj krok sposobu przygotowania" />
+        <Button fx:id="removeDirections" layoutX="379.0" layoutY="303.0" text="Usuń sposób przygotowania" />
+      <Button fx:id="backToMainMenu" layoutX="33.0" layoutY="345.0" mnemonicParsing="false" text="Powrót" />
+    </children>
+</AnchorPane>
